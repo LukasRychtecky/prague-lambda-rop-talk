@@ -76,7 +76,7 @@ As a user I want to update my name and e-mail address.
 
 ### Reality
 
-[](img/happy-paths-i-dont-like-them.jpg)
+![](img/happy-paths-i-dont-like-them.jpg)
 
 --
 
@@ -84,7 +84,7 @@ As a user I want to update my name and e-mail address.
 
 As a user I want to update my name and e-mail address **and see meaningful error message when something goes wrong**.
 
-[](img/unhappy-path.svg)
+![](img/unhappy-path.svg)
 
 --
 
@@ -178,7 +178,7 @@ An error handling adds 14 lines extra! 200% growth!
 
 ### Processing errors in functional way - Design
 
-[](img/rop-bypass.svg)
+![](img/rop-bypass.svg)
 
 How to bypass a mainstream when a function "fails"?
 
@@ -194,7 +194,7 @@ Type for rescue!
 
 ### Processing errors in functional way - Design
 
-[](img/rop-bypass.svg)
+![](img/rop-bypass.svg)
 
 * Each use case function will be equivalent to a single function
 * The function returns a sum type "Success" (right) or "Failure" (left)
@@ -204,7 +204,7 @@ Type for rescue!
 
 ### Railway Oriented Programming - Switch
 
-[](img/validation-fun.svg)
+![](img/validation-fun.svg)
 
 A simple validation function
 
@@ -226,31 +226,31 @@ A simple validation function
 
 ### Railway Oriented Programming - Switch
 
-[](img/switch.png)
+![](img/switch.png)
 
 --
 
 ### Railway Oriented Programming - Connecting switches
 
-[](img/connecting-switches.png)
+![](img/connecting-switches.png)
 
 --
 
 ### Railway Oriented Programming - Connected switches
 
-[](img/connected-switches.png)
+![](img/connected-switches.png)
 
 --
 
 ### Railway Oriented Programming - Switches
 
-[](img/switches.png)
+![](img/switches.png)
 
 --
 
 ### Railway Oriented Programming - Flow as switches
 
-[](img/flow-as-switches.png)
+![](img/flow-as-switches.png)
 
 But how to connect them?
 
@@ -258,7 +258,7 @@ But how to connect them?
 
 ### Railway Oriented Programming - Composing switches
 
-[](img/switches-with-boxes.png)
+![](img/switches-with-boxes.png)
 
 Each box is a switch function
 
@@ -266,7 +266,7 @@ Each box is a switch function
 
 ### Railway Oriented Programming - Composing one-track
 
-[](img/composing-one-track.png)
+![](img/composing-one-track.png)
 
 Composing one-track functions fine
 
@@ -274,7 +274,7 @@ Composing one-track functions fine
 
 ### Railway Oriented Programming - Composing two-track
 
-[](img/composing-two-track.png)
+![](img/composing-two-track.png)
 
 Composing two-track is fine too
 
@@ -282,7 +282,7 @@ Composing two-track is fine too
 
 ### Railway Oriented Programming - Composing switches issue
 
-[](img/composing-switches-issue.png)
+![](img/composing-switches-issue.png)
 
 But cannot compose them
 
@@ -290,7 +290,7 @@ But cannot compose them
 
 ### Railway Oriented Programming - Building adapter
 
-[](img/adapter.png)
+![](img/adapter.png)
 
 ```clojure
 (defn adapt
@@ -303,7 +303,7 @@ But cannot compose them
 
 ### Railway Oriented Programming - Bind
 
-[](img/adapter.png)
+![](img/adapter.png)
 
 Or we can use **bind** function from cats
 
@@ -336,7 +336,7 @@ Or we can use **bind** function from cats
 
 ### Railway Oriented Programming - Bind + composition
 
-[](img/flow-as-switches.png)
+![](img/flow-as-switches.png)
 
 ```clojure
 (cats.core/bind
@@ -349,7 +349,7 @@ Or we can use **bind** function from cats
 
 ### Railway Oriented Programming - Bind + composition >>=
 
-[](img/flow-as-switches.png)
+![](img/flow-as-switches.png)
 
 For better readability (like `->`)
 ```clojure
@@ -377,7 +377,7 @@ References
 
 ### Full example
 
-[](img/flow-as-switches.png)
+![](img/flow-as-switches.png)
 
 ```clojure
 (defn update-name-and-email
