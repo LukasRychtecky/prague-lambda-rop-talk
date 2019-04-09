@@ -1,0 +1,9 @@
+@startuml
+start
+if (validate) then (ok)
+  -[#008000]->
+  stop
+else (fail)
+  end
+endif
+@enduml

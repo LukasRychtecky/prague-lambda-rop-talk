@@ -1,0 +1,27 @@
+@startuml
+start
+:Validate request;
+if (name is blank) then (yes)
+  :Return NameIsBlank error message;
+  end
+else (no)
+  if (email is blank or not valid) then (yes)
+    :Return EmailIsNotValid error message;
+    end
+  else (no)
+    :Update a user in DB;
+    if (user found?) then (yes)
+      :Send information e-mail;
+      if (e-mail successfully sent?) then (yes)
+        :Return a result to a user;
+      else (no)
+        :Return MailServerError error message;
+        end
+      endif
+    else (no)
+      :Return UserNotFound error message;
+      end
+    endif
+  endif
+stop
+@enduml

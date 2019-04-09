@@ -1,0 +1,8 @@
+@startuml
+start
+:Validate request;
+:Update a user in DB;
+:Send information e-mail;
+:Return a result to a user;
+stop
+@enduml

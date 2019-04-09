@@ -1,0 +1,14 @@
+@startuml
+start
+floating note left: Request
+if (validate) then (fail)
+elseif (update) then (fail)
+elseif (send) then (fail)
+else (ok)
+  -[#008000]->
+  stop
+  floating note right: Success
+endif
+end
+floating note left: Failure
+@enduml
