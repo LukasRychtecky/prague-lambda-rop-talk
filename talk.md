@@ -21,6 +21,7 @@ style: style.css
 * Clojure, ClojureScript, Java, Python, Javascript, Ruby
 * Sokol Libeň
 * [https://twitter.com/LukasRychtecky](https://twitter.com/LukasRychtecky)
+* At [https://flexiana.com/](https://flexiana.com/) and [https://www.zimpler.com/](https://www.zimpler.com/)
 
 --
 
