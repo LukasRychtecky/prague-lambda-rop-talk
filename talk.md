@@ -13,7 +13,7 @@ style: style.css
 
 --
 
-### About me
+### WHOAMI
 
 * Lukáš Rychtecký
 * ČVUT FEL (CTU FEE)
@@ -173,6 +173,13 @@ An error handling adds 14 lines extra! 200% growth!
        send-email
        format-response))
 ```
+
+--
+
+### GO TO
+
+1. goto statement is __bad__\*
+2. __exceptions__ are __new__ goto statement
 
 --
 
@@ -372,6 +379,7 @@ References
 * [https://fsharpforfunandprofit.com/rop](https://fsharpforfunandprofit.com/rop)
 * [https://vimeo.com/113707214](https://vimeo.com/113707214)
 * [https://bit.ly/rop-example](https://bit.ly/rop-example) - example
+* [Don't Use Exceptions For Flow Control](https://web.archive.org/web/20140430044213/http://c2.com/cgi-bin/wiki?DontUseExceptionsForFlowControl)
 
 --
 
